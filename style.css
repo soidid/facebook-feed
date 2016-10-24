@@ -13,6 +13,20 @@ body {
     color: white;
     font-size: 14px;
     line-height: 1.4;
+    display: block;
+    text-decoration: none;
+}
+.policy {
+    padding: 10px;
+    border: 3px solid #00bfc4;
+    font-size: 14px;
+    line-height: 1.4;
+}
+.link, .link:visited {
+    color: #00bfc4;
+}
+.link:hover {
+    color: #F8766D;
 }
 #userimg{
     width: 50px;
