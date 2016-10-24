@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<title>my-post-scraper</title>
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<link href="./style.css" rel="stylesheet">
+</head>
+<body>
+    <div class="main">
+        <div class="intro">
+            <b>my-post-scraper</b><br/>
+            抓抓你的臉書 timeline 上有什麼，方便快速查找。<br/>
+            不會存你的資料。<br/>
+            以上。
+        </div>
+        <div class="loginPanel">
+            <img src="./img/user.png" id="userimg"><div id="status" class="status">Please login.</div>
+            <button id="login" onClick=login();>登入</button>
+            <button id="logout" onClick=logout(); class='hide'>登出</button>
+            
+        </div>
+    
+  	    <div id="controlPanel" class="hide">
+            設定上限:<input type="number" name="max" min="1" max="5000" value=10 id="inputMax">
+            <button onClick="getFeed();" id="getFeed">開始</button>
+  	        <button onClick="reset();">清除</button>
+        </div>
+         <div id="progressBlock" class="hide">
+            <b>Processing...post#<span id="progressIndex"></span></b>
+            <span id="finishText"></span>
+            
+        </div>
+  	    <div id="downloadBlock" class="hide">
+            <b>Download your facebook feed as:</b>
+            <a id="downloadJSON">Feed.json</a>
+  	        <a id="downloadCSV">Feed.csv</a>
+  	    </div>
+    
+  	   
+        <div id="feeds"></div>
+    </div>
+    <script type="text/javascript" src="dist/bundle.js"></script>
+</body>
+</html>

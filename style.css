@@ -1,0 +1,107 @@
+body {
+    font-family: monospace;
+    padding: 0;
+    margin: 0;
+}
+.main {
+    max-width: 800px;
+    margin: 0 auto;
+}
+.intro {
+    background: #00bfc4;
+    padding: 15px 10px;
+    color: white;
+    font-size: 14px;
+    line-height: 1.4;
+}
+#userimg{
+    width: 50px;
+    height: 50px;
+}
+.loginPanel {
+    margin: 10px;
+}
+.status {
+    font-size: 14px;
+    width: calc( 100% - 110px);
+    vertical-align: top;
+    margin-top: 10px;
+    display: inline-block;
+}
+.loginPanel button {
+    float: right;
+}
+#controlPanel {
+    margin: 10px;
+}
+button {
+    border: 1px solid #dedada;
+    cursor: pointer;
+    background: #dedada;
+}
+button:hover, #getFeed:hover {
+    background: #F8766D;
+    border-color: #F8766D;
+    color: white;
+}
+button:focus, #getFeed:focus {
+    outline: none;
+}
+#getFeed {
+    background: #00bfc4;
+    border-color: #00bfc4;
+    color: white;
+}
+
+#progressBlock, #downloadBlock {
+    margin: 10px;
+    border-left: 10px solid #00bfc4;
+    padding: 4px 10px;
+    font-size: 14px;
+}
+#downloadBlock a {
+    color: black;
+}
+.feed-left {
+    width: 40px;
+    padding: 10px 0;
+    display: inline-block;
+    vertical-align: top;
+    font-family: initial;
+    font-weight: 800;
+    background: #f3efef;
+    text-align: center;
+}
+.feed-right {
+    width: calc( 100% - 60px);
+    display: inline-block;
+    padding: 6px 10px;
+}
+.feed-entry {
+	display: block;
+    margin: 10px;
+    color: rgb(53,55,54);
+    text-decoration: none;
+    line-height: 1.4;
+    font-size: 14px;
+    border: 1px solid #dedada;
+   
+}
+.feed-entry:hover {
+	background: #F5F5F5;
+}
+.feed-body {
+	width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.feed-count {
+	color: #F8766D;
+}
+.hide {
+    display: none;
+}
+.show {
+    display: block;
+}
