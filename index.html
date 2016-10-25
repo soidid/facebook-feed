@@ -20,7 +20,8 @@
         </div>
         <div class="loginPanel">
             <img src="./img/user.png" id="userimg"><div id="status" class="status">Please login.</div>
-            <button id="login" onClick=login();>登入</button>
+            <fb:login-button id="login" scope="public_profile,email,user_posts" onlogin="checkLoginState();">
+</fb:login-button>
             <button id="logout" onClick=logout(); class='hide'>登出</button>
             
         </div>
