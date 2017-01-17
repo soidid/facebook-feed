@@ -346,7 +346,8 @@
 				var entry_node = document.createElement("a");
 
 				var ids = entry.id.split('_');
-				entry_node.setAttribute('href', '//www.facebook.com/' + ids[0] + '/posts/' + ids[1]);
+				//entry_node.setAttribute('href', '//www.facebook.com/'+ids[0]+'/posts/'+ids[1]);
+				entry_node.setAttribute('href', '//www.facebook.com/' + entry.id);
 				entry_node.setAttribute('target', '_blank');
 				entry_node.classList.add("feed-entry");
 
